@@ -53,7 +53,7 @@ button{
     margin: 0;
 }
 
-.logo-title span{
+.logo-title::first-letter{
     font-weight: 900;
     color: #1abc9c;
 }
