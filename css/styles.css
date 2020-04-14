@@ -38,11 +38,10 @@ button{
     padding: 0 15px;
 }
 .main-head{
-    padding-bottom: 6px;
+    padding-bottom: 26px;
+    padding-top: 20px;
 }
-.wrap-nav{
-    padding: 20px 0;
-}
+
 .logo-title{
     width: 80px;
     font-size: 30px;
