@@ -40,6 +40,9 @@ button{
 .main-head{
     padding-bottom: 6px;
 }
+.wrap-nav{
+    padding: 20px 0;
+}
 .logo-title{
     width: 80px;
     font-size: 30px;
@@ -48,6 +51,7 @@ button{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .logo-title span{
@@ -56,7 +60,7 @@ button{
 }
 .nav {
     float: right;
-    margin-top: 15px;
+    padding-top: 10px;
 }
 .main-nav-list{
     text-transform: uppercase;
@@ -64,6 +68,8 @@ button{
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 .nav-list-item{
     display: inline-block;
