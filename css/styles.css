@@ -324,7 +324,22 @@ button{
     transition: 0.3s;
 
 }
-.button-menu:hover,
+
+.buy {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 16px 13px;
+    background: #323232;
+    border: solid 1px white;
+    width: 100%;
+    position: relative;
+    text-align: right;
+    transition: 0.3s;
+}
+.button-menu:hover, .buy:hover,
 .button-menu:focus{
     background-color: #1abc9c;
     border: solid 1px #1abc9c;
@@ -342,19 +357,7 @@ button{
 .time{
     background: url("../img/icon/time.png") no-repeat center;
 }
-.buy {
-    color: #ffffff;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 16px 13px;
-    background: #323232;
-    border: solid 1px white;
-    width: 100%;
-    position: relative;
-    text-align: right;
-}
+
 
 .buy:before {
     content: "";
