@@ -376,7 +376,8 @@ button{
 .slider-img{
     height: 100%;
     margin: 0 auto;
-    max-width: none;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -399,4 +400,5 @@ button{
 .slider{
     position: relative;
     max-width: 1920px;
+    margin: 0 auto;
 }
