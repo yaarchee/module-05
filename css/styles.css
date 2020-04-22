@@ -227,7 +227,6 @@ button{
 .product-name{
     float: left;
     margin: 0;
-    padding: 12px 14px;
     font-size: 18px;
 
 }
@@ -399,6 +398,8 @@ button{
 }
 .product-link{
     display: block;
+    padding: 12px 14px;
+    font-size: 18px;
 }
 
 .slider{
