@@ -42,6 +42,10 @@ button{
     padding-bottom: 26px;
     padding-top: 20px;
 }
+.logo-link{
+    display: block;
+}
+
 
 .logo-title{
     width: 80px;
