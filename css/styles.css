@@ -137,6 +137,14 @@ button{
     letter-spacing: -1.2px;
     margin: 0;
 }
+.main-buttons{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
 .button-slider {
     width: 104px;
     height: 104px;
@@ -144,9 +152,9 @@ button{
     position: absolute;
     top: 50%;
     border: none;
-    z-index: 11;
     transition: 0.5s;
     outline: none;
+    transform: translate(0, -50%);
 
 }
 
@@ -156,12 +164,12 @@ button{
 }
 
 .left-button {
-    left: 50%;
-    transform: translate(-552%, -50%);
+    left: 0;
+
 }
 .right-button{
-    right: 50%;
-    transform: translate(552%, -50%);
+    right: 0;
+
 }
 .left-button:before{
     content: "";
@@ -211,8 +219,9 @@ button{
 .products-element:not(:nth-child(4n)){
     margin-right: 30px;
 }
-.products-element{
+.products-element {
     margin-bottom: 30px;
+    font-size: 0;
 }
 .product-description {
     font-family: 'Roboto', sans-serif;
@@ -265,22 +274,22 @@ button{
     position: relative;
 }
 
-.elements-menu-overlay{
+.elements-menu-overlay {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    border: solid 10px white;
-    background-color: black;
+    border: solid 10px rgba(255,255,255,0);
+    background-color: rgba(0,0,0,0);
+    background-clip: padding-box;
     top: 0;
     left: 0;
-    opacity: 0;
-    transition: opacity 0.3s;
+
 }
 
-
 .products-element:hover .elements-menu-overlay{
-    opacity: 0.5;
+    border: solid 10px rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.5);
 }
 
 .elements-menu {
@@ -290,8 +299,6 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-
-
 }
 
 .products-element:hover .elements-menu{
@@ -299,11 +306,7 @@ button{
 
 }
 
-.elements-menu-like {
-    font-size: 0;
-    margin-bottom: 5px;
 
-}
 
 .button-menu{
     width: 50px;
@@ -311,6 +314,7 @@ button{
     border: solid 1px white;
     background: none;
     transition: 0.3s;
+    margin-bottom: 5px;
 
 }
 
@@ -322,7 +326,6 @@ button{
     text-transform: uppercase;
     padding: 16px 13px;
     background: #323232;
-    border: solid 1px white;
     width: 100%;
     position: relative;
     text-align: right;
@@ -333,7 +336,7 @@ button{
     background-color: #1abc9c;
     border: solid 1px #1abc9c;
 }
-.button-menu:not(:nth-last-child(-n+1)){
+.button-menu:not(:nth-last-child(-n+2)){
     margin-right: 8px;
 }
 
